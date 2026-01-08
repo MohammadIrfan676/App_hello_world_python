@@ -3,3 +3,5 @@ docker images
 docker run -d -p 3000:3000 mohammadirfan676/flask:RELEASE
 docker tag flask:latest mohammadirfan676/flask:latest
 docker push mohammadirfan676/flask:latest
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
