@@ -1,1 +1,4 @@
-
+docker build . -t flask:latest
+docker images
+docker tag flask:latest mohammadirfan676/flask:latest
+docker push mohammadirfan676/flask:latest
