@@ -1,1 +1,14 @@
-
+eksctl delete cluster --name demo-cluster-1
+kubectl apply -f deployment.yaml
+kubectl get pods
+kubectl apply -f service.yaml
+kubectl get svc
+kubectl apply -f ingress.yaml
+kubectl get ing
+kubectl edit svc hello-python-app
+kubectl get nodes -o wide
+kubectl get svc -o wide
+kubectl get pods -n  ingress-nginx
+kubectl edit pod <pod name> -n ingress-nginx
+nslookup <ALB Address>
+sudo vim /etc/hosts
