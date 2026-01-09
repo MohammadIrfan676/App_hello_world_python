@@ -8,7 +8,7 @@ kubectl apply -f ingress.yaml
 kubectl get ing
 kubectl edit svc hello-python-app
 kubectl get nodes -o wide
-#make sure port is allowed to all traffic in ec2 security group to access in browser
+#make sure port is allowed to all traffic in ec2 security group to access in browser through Nodeport
 kubectl get svc -o wide
 kubectl get pods -n  ingress-nginx
 kubectl edit pod <pod name> -n ingress-nginx
