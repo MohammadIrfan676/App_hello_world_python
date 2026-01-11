@@ -1,9 +1,0 @@
-kubectl get pods -n  ingress-nginx
-kubectl edit pod <pod name> -n ingress-nginx
-# to forward traffic from ALB Address to specified domain name
-nslookup <ALB Address>
-sudo vim /etc/hosts
-# paste ALB address followed by domain name
-# now you can access through domain name
-http://hello-python-app.local/
-
