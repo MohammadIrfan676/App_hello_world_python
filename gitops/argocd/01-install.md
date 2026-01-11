@@ -10,3 +10,5 @@ kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}
 #Get the Loadbalancer service IP
 
 kubectl get svc argocd-server -n argocd
+
+kubectl get nodes -o wide
