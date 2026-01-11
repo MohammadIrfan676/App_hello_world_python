@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hello-python-app
-        image: mohammadirfan676/flaskt3:latest
+        image: mohammadirfan676/hello-python-app:latest
         ports:
         - containerPort: 8080
