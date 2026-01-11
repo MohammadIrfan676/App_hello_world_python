@@ -18,4 +18,21 @@ kubectl get nodes -o wide
 #user id - admin for password follow below steps
 
 kubectl get secrets -n argocd
-kubectl edit secret ar s
+kubectl edit secret argocd-initial-admin-secret -n argocd
+#copy password
+echo <paste> | base64 --decode
+#copy password excluding % and paste in argocd login page
+New app
+hello-python-app
+default
+automatic
+self heal
+copy and paste git hub link 
+cluster url default
+default 
+values.yaml
+then click create app
+
+#now if you do kubectl get all everything is created
+
+
