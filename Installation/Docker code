@@ -1,4 +1,6 @@
+```bash
 docker build . -t flaskt3:latest
+```
 docker images
 docker run -d -p 8080:8080 flaskt3:latest
 docker tag flaskt3:latest mohammadirfan676/hello-python-app:latest
