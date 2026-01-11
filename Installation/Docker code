@@ -3,5 +3,3 @@ docker images
 docker run -d -p 8080:8080 flaskt3:latest
 docker tag flaskt3:latest mohammadirfan676/hello-python-app:latest
 docker push mohammadirfan676/hello-python-app:latest
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
