@@ -10,7 +10,7 @@ kubectl get secrets -n argocd
 kubectl edit secret argocd-initial-admin-secret -n argocd
 #copy password
 echo <paste> | base64 --decode
-#copy password excluding % and paste in argocd login page
+#copy password excluding % and paste in argocd login page then follow these steps
 New app
 hello-python-app
 default
