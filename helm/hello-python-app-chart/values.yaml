@@ -8,7 +8,7 @@ image:
   repository: mohammadirfan676/flaskt3
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "20926635494"
+  tag: "20927175166"
 
 ingress:
   enabled: false
