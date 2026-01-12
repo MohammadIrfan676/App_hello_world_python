@@ -1,0 +1,25 @@
+kubectl get svc argocd-server -n argocd
+
+# to acccess argocd through external IP and nodeport in web browser
+
+kubectl get nodes -o wide 
+
+#user id - admin for password follow below steps
+
+kubectl get secrets -n argocd
+kubectl edit secret argocd-initial-admin-secret -n argocd
+#copy password
+echo <paste> | base64 --decode
+#copy password excluding % and paste in argocd login page then follow these steps
+New app
+hello-python-app
+default
+automatic
+self heal
+copy and paste git hub link 
+cluster url default
+default 
+values.yaml
+then click create app
+
+#now if you do kubectl get all everything is created
