@@ -1,15 +1,16 @@
 
 # App_hello_world_python
 
-Running python web app following these steps
+Running a Hello World Python Web Application Using the Following Steps:
 
-1. Containerization: Building Docker image from Docker file
+Containerization: Building a Docker image from a Dockerfile.
 
-2. Provisioning Kubenetes cluster usign Terraform
+Provisioning: Creating a Kubernetes cluster using Terraform, then using kubectl and the AWS CLI to configure the cluster and apply Kubernetes manifest files.
 
-3. Kubernetes: Running the application on Kubernetes cluster by writing deployment,service, ingress yaml file and accessing the application through public accessible hostname by mapping ALB address to hostname.
+Kubernetes Deployment: Running the application on a Kubernetes cluster by creating Deployment, Service, and Ingress YAML files, and accessing the application through a publicly accessible hostname by mapping the Ingress controller (ALB) address to http://hello-python-app.local/.
 
-5. Using Helm chart to run Kubernetes using the latest Github action runner id whenever a new version of image is uploaded to docker hub.
+Helm: Using Helm charts to deploy Kubernetes manifest files across different environments, including updating the Docker image tag.
 
-6. Implementing CI using Github actions and CD using ArgoCD by automatically taking latest image tag version from helm chart
+CI (Continuous Integration): Implementing CI using GitHub Actions, where changes pushed to the main branch trigger a pipeline that builds a new Docker image, pushes it to Docker Hub, and updates the Helm chart with the new image version.
 
+CD (Continuous Deployment): Using Argo CD to continuously monitor the Helm chart for updates and automatically deploy the latest image version to the Kubernetes cluster.
