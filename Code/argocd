@@ -5,11 +5,13 @@ kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}
 
 kubectl get svc argocd-server -n argocd
 
+#copy elb address and directly access but some time it takes time
+
 # to acccess argocd through external IP and nodeport in web browser
 
 kubectl get nodes -o wide 
 
-#user id - admin for password follow below steps
+#user id - admin,  for password follow below steps
 
 kubectl get secrets -n argocd
 kubectl edit secret argocd-initial-admin-secret -n argocd
