@@ -7,7 +7,7 @@ Running a Hello World Python Web Application Using the Following Steps:
 
 2.Provisioning: Creating a Kubernetes cluster using Terraform, then using kubectl and the AWS CLI to configure the cluster and apply Kubernetes manifest files.
 
-3.Kubernetes Deployment: Running the application on a Kubernetes cluster by creating Deployment, Service, and Ingress YAML files, and accessing the application through a publicly accessible hostname by mapping the Ingress controller (ALB) address to http://hello-python-app.local/.
+3.Kubernetes Deployment: Running the application on a Kubernetes cluster by creating Deployment, Service, and Ingress YAML files, and accessing the application through a hostname by mapping the Ingress controller (ALB) address to http://hello-python-app.local/.
 
 4.Helm: Using Helm charts to deploy Kubernetes manifest files across different environments, including updating the Docker image tag.
 
